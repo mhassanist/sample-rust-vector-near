@@ -20,10 +20,10 @@ env 'RUSTFLAGS=-C link-arg=-s' cargo build --target wasm32-unknown-unknown --rel
 4- يمكنك رفع هذا الملف مباشرة على البلوك تشين بالطرق المعتادة مثل
 
 ```
- near dev-deploy .\target\wasm32-unknown-unknown\debug\near_rust_helloworld.wasm
+ near dev-deploy .\target\wasm32-unknown-unknown\release\near-rust-sdk-exploration.wasm
 ```
 
-5- يمكنك التجربة باستدعاء الدوال `hello_world`
+5- يمكنك التجربة باستدعاء الدوال 
 
 ```
 near view CONTRACT_ACCOUNT_ID get_message
