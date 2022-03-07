@@ -9,7 +9,7 @@ near_sdk::setup_alloc!();
 pub struct Contract {
   message: String,
 }
-#[near_bindgen]
+//#[near_bindgen]
 //ماكرو حتى يمكن لبيئة العمل ترجمة الكود التالي الى كود يعمل على البلوك تشين
 #[near_bindgen]
 impl Contract {
