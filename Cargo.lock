@@ -294,6 +294,7 @@ name = "near-rust-sdk-exploration"
 version = "0.1.0"
 dependencies = [
  "near-sdk",
+ "serde",
 ]
 
 [[package]]
