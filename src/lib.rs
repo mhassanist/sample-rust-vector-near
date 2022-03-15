@@ -1,6 +1,8 @@
+use std::fmt::Write;
+
 use near_sdk::borsh::{self, BorshDeserialize, BorshSerialize};
 use near_sdk::collections::Vector;
-use near_sdk::near_bindgen;
+use near_sdk::{near_bindgen, IntoStorageKey};
 near_sdk::setup_alloc!();
 
 #[derive(Default, BorshDeserialize, BorshSerialize)]
@@ -24,15 +26,7 @@ impl Default for Contract {
 
 #[near_bindgen]
 impl Contract {
-  pub fn add(&mut self) -> String {
-    let w = Writing {
-      text: "val".to_string(),
-      sender: "val".to_string(),
-      receiver: "val".to_string(),
-    };
-
-    let _ = &self.writing_list.push(&w);
-
+  pub fn add(&self) -> String {
     return "Added".to_string();
   }
   pub fn get_writings(&self) -> u64 {
