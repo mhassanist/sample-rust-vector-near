@@ -158,6 +158,14 @@ dependencies = [
 ]
 
 [[package]]
+name = "friend"
+version = "0.1.0"
+dependencies = [
+ "near-sdk",
+ "serde",
+]
+
+[[package]]
 name = "generic-array"
 version = "0.14.5"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -287,14 +295,6 @@ checksum = "a48d80c4ca1d4cf99bc16490e1e3d49826c150dfc4410ac498918e45c7d98e07"
 dependencies = [
  "lazy_static",
  "regex",
-]
-
-[[package]]
-name = "near-rust-sdk-exploration"
-version = "0.1.0"
-dependencies = [
- "near-sdk",
- "serde",
 ]
 
 [[package]]

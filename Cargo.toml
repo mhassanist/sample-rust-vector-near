@@ -1,5 +1,5 @@
 [package]
-name = "near-rust-sdk-exploration"
+name = "friend"
 version = "0.1.0"
 authors = ["Mohammed Hassan <mhassanist@testnear.net>"]
 edition = "2018"
